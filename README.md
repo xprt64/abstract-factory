@@ -215,7 +215,7 @@ $someHelper = $abstractFactory->createObject(\Web\Helper\SomeHelper::class);
 echo $someHelper->helpAction();
 ```
 
-Notice that dependencies are hidden, and we can focus on the main bussiness. My client code doesn't care or know that $someHelper need an `Authenticator` or that helpAction need an `SomeObject` to do its work;
+Notice that dependencies are hidden, and we can focus on the main bussiness. My client code doesn't care or know that `$someHelper` need an `Authenticator` or that `helpAction` need an `SomeObject` to do its work;
 
 In the background a lot of things happen, a lot of dependencies are detected, resolved and injected. 
 Notice that I don't use the `new` operator to create `$someObject`. The responsability of actual creation of the object is passed to the `AbstractFactory`
