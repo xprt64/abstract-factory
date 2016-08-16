@@ -219,3 +219,6 @@ Notice that dependencies are hidden, and we can focus on the main bussiness. My 
 
 In the background a lot of things happen, a lot of dependencies are detected, resolved and injected. 
 Notice that I don't use the `new` operator to create `$someObject`. The responsability of actual creation of the object is passed to the `AbstractFactory`
+
+# Notes
+The `ObjectFactory` is NOT this [abstract factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern).
